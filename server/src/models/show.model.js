@@ -2,7 +2,7 @@ import mongoose, {Schema} from "mongoose";
 import modelOptions from "./model.options.js";
 export default mongoose.model(
     "Show",
-    mongoose.Schema({
+    new Schema({
         user: {
             type: Schema.Types.ObjectId,
             ref: "User",

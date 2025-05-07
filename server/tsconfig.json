@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "allowJs": true,         // ✅ Erlaube JS-Dateien
+      "outDir": "dist",        // ✅ Zielverzeichnis für Build
+      "checkJs": true,         // ✅ Optional: JS auf Fehler prüfen wie TS
+      "target": "es2022",      // oder "es6", "esnext", etc.
+      "module": "NodeNext",    // für Node.js
+      "strict": false ,         // Optional, wenn du nicht zu viele Warnungen willst
+      "sourceMap": true,       // ✅ Erstelle Source Maps für Debugging
+      "moduleResolution": "NodeNext", // für Node.js
+      "allowSyntheticDefaultImports": true
+    },
+    "include": ["src/**/*.js", "src/index.js"]
+  }

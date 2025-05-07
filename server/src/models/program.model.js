@@ -3,7 +3,7 @@ import modelOptions from "./model.options.js";
 
 export default mongoose.model(
     "Programm",
-    mongoose.Schema({
+    new Schema({
         semester: {
             type: String,
             required: true,
@@ -27,6 +27,5 @@ export default mongoose.model(
                 required: true
             }
         ]
-    }, {timestamps: true, versionKey: false
-
-    }), modelOptions)
+    }, modelOptions)
+);

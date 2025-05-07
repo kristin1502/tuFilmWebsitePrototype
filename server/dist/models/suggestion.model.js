@@ -1,37 +1,31 @@
 import mongoose, { Schema } from "mongoose";
 import modelOptions from "./model.options.js";
-
-export default mongoose.model(
-  "Suggestion",
-  new Schema(
-    {
-      user: {
+export default mongoose.model("Suggestion", new Schema({
+    user: {
         type: Schema.Types.ObjectId,
         ref: "User",
         required: true,
-      },
-      content: {
+    },
+    content: {
         type: String,
         required: true,
-      },
-      mediaType: {
+    },
+    mediaType: {
         type: String,
         enum: ["tv", "movie"],
         required: true,
-      },
-      mediaId: {
-        type: String,
-        required: true,
-      },
-      mediaTitle: {
-        type: String,
-        required: true,
-      },
-      mediaPoster: {
-        type: String,
-        required: true,
-      },
     },
-    modelOptions
-  )
-);
+    mediaId: {
+        type: String,
+        required: true,
+    },
+    mediaTitle: {
+        type: String,
+        required: true,
+    },
+    mediaPoster: {
+        type: String,
+        required: true,
+    },
+}, modelOptions));
+//# sourceMappingURL=suggestion.model.js.map

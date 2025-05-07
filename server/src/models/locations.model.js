@@ -3,7 +3,7 @@ import modelOptions from "./model.options.js";
 
 export default mongoose.model(
     "Location",
-    mongoose.Schema({
+    new Schema({
         name: {
             type: String,
             required: true,
