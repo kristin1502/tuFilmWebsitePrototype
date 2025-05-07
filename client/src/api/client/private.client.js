@@ -1,7 +1,7 @@
 import axios from "axios";
 import queryString from "query-string";
 
-const baseURL = "https://tu-film-website-prototype-ofaz.vercel.app/api/v1/";
+const baseURL = "https://tufilmwebsiteprototype.onrender.com/api/v1/";
 
 const privateClient = axios.create({
     baseURL,
